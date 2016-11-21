@@ -44,7 +44,8 @@ public class LoginActivity extends AppCompatActivity {
         tRegister.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                //TODO
+                //TODO Register biomatric
+
             }
         });
     }
@@ -66,15 +67,14 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private boolean isValidUserName(String userName) {
-        if(userName.equalsIgnoreCase("piyush"))
+        if(userName.equalsIgnoreCase("pj"))
             return true;
         else
             return false;
     }
 
     private boolean isValidPassword(String password) {
-        if(password.equalsIgnoreCase("piyush"))
-
+        if(password.equalsIgnoreCase("pj"))
             return true;
         else
             return false;

@@ -24,10 +24,69 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/mActFromSpn"
-        android:layout_marginTop="24dp"
         android:layout_below="@+id/mAcctFromTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:text="Account To"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mActFromSpn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp"
+        android:id="@+id/mAcctToTxt" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mAcctToTxt"
+        android:layout_marginTop="18dp"
+        android:id="@+id/mAcctToSpn" />
+
+    <Button
+        android:text="TRANSFER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mAcctToSpn"
+        android:layout_marginTop="60dp"
+        android:id="@+id/mTransBalBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="BACK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mbackBtn"
+        android:layout_alignBaseline="@+id/mTransBalBtn"
+        android:layout_alignBottom="@+id/mTransBalBtn"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="26dp"
-        android:layout_marginEnd="26dp" />
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:text="Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/mbackBtn"
+        android:layout_alignStart="@+id/mbackBtn"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="22dp"
+        android:id="@+id/mLogoutTxt3" />
+
+    <TextView
+        android:text="Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mLogoutTxt3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/mUserTxt3" />
+
 </RelativeLayout>
