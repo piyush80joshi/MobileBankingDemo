@@ -20,44 +20,66 @@
         android:layout_marginTop="55dp"
         android:id="@+id/mAcctFromTxt" />
 
-    <Spinner
-        android:layout_width="match_parent"
+    <TextView
+        android:text="Welcome"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/mActFromSpn"
-        android:layout_below="@+id/mAcctFromTxt"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="18dp" />
+        android:id="@+id/mUserTxt3"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/mAcctToTxt"
+        android:layout_alignEnd="@+id/mAcctToTxt"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mLogoutTxt3"
+        android:layout_alignBaseline="@+id/mUserTxt3"
+        android:layout_alignBottom="@+id/mUserTxt3"
+        android:layout_alignRight="@+id/mbackBtn"
+        android:layout_alignEnd="@+id/mbackBtn" />
 
     <TextView
         android:text="Account To"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/mAcctToTxt"
         android:layout_below="@+id/mActFromSpn"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="41dp"
-        android:id="@+id/mAcctToTxt" />
+        android:layout_alignParentStart="true" />
 
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/mAcctToSpn"
+        android:layout_marginTop="14dp"
         android:layout_below="@+id/mAcctToTxt"
-        android:layout_marginTop="18dp"
-        android:id="@+id/mAcctToSpn" />
+        android:layout_centerHorizontal="true" />
 
-    <Button
-        android:text="TRANSFER"
-        android:layout_width="wrap_content"
+    <Spinner
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/mAcctToSpn"
-        android:layout_marginTop="60dp"
-        android:id="@+id/mTransBalBtn"
+        android:id="@+id/mActFromSpn"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/mAcctFromTxt"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_marginTop="29dp"
+        android:id="@+id/mAmountTxt"
+        android:hint="Amount"
+        android:layout_below="@+id/mAcctToSpn"
+        android:layout_centerHorizontal="true" />
+
     <Button
-        android:text="BACK"
+        android:text="CANCEL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/mbackBtn"
@@ -68,25 +90,16 @@
         android:layout_marginRight="10dp"
         android:layout_marginEnd="10dp" />
 
-    <TextView
-        android:text="Logout"
+    <Button
+        android:text="CONFIRM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/mbackBtn"
-        android:layout_alignStart="@+id/mbackBtn"
-        android:layout_marginLeft="9dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="22dp"
-        android:id="@+id/mLogoutTxt3" />
-
-    <TextView
-        android:text="Welcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/mLogoutTxt3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/mUserTxt3" />
+        android:layout_marginTop="40dp"
+        android:id="@+id/mTransBalBtn"
+        android:layout_below="@+id/mAmountTxt"
+        android:layout_toLeftOf="@+id/mbackBtn"
+        android:layout_toStartOf="@+id/mbackBtn"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp" />
 
 </RelativeLayout>
