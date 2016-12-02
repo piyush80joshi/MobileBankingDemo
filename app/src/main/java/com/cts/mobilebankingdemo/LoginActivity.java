@@ -34,7 +34,8 @@ public class LoginActivity extends AppCompatActivity {
                 String password=ePassword.getText().toString();
                 boolean success= login(userName,password);
                 if(success) {
-                    Intent bankingIntent = new Intent(LoginActivity.this, BankingActivity.class);
+                   // Intent bankingIntent = new Intent(LoginActivity.this, BankingActivity.class);
+                    Intent bankingIntent = new Intent(LoginActivity.this, MainActivity.class);
                     LoginActivity.this.startActivity(bankingIntent);
                 }
 

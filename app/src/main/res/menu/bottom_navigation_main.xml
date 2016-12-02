@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/view_balance"
+        android:enabled="true"
+        android:icon="@drawable/ic_account_balance_black_24dp"
+        android:title="@string/text_view_balance"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/bal_transfer"
+        android:enabled="true"
+        android:icon="@drawable/ic_swap_horiz_black_24dp"
+        android:title="@string/text_transfer"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/text_settings"
+        app:showAsAction="ifRoom" />
+
+</menu>

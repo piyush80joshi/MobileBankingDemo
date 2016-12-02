@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cts.mobilebankingdemo.BalanceTransferFragment">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <TextView
+            android:text="Account From"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/fActFromSpn"
+            android:layout_alignStart="@+id/fActFromSpn"
+            android:layout_marginTop="55dp"
+            android:id="@+id/fAcctFromTxt" />
+
+
+        <TextView
+            android:text="Account To"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:id="@+id/fAcctToTxt"
+            android:layout_below="@+id/fActFromSpn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fAcctToSpn"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/fAcctToTxt"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fActFromSpn"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/fAcctFromTxt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_marginTop="29dp"
+            android:id="@+id/fAmountTxt"
+            android:hint="Amount"
+            android:layout_below="@+id/fAcctToSpn"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:text="CANCEL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fbackBtn"
+            android:layout_alignBaseline="@+id/fTransBalBtn"
+            android:layout_alignBottom="@+id/fTransBalBtn"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:text="CONFIRM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:id="@+id/fTransBalBtn"
+            android:layout_below="@+id/fAmountTxt"
+            android:layout_toLeftOf="@+id/fbackBtn"
+            android:layout_toStartOf="@+id/fbackBtn"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

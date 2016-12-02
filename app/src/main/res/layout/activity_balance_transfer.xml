@@ -18,7 +18,7 @@
         android:layout_alignLeft="@+id/mActFromSpn"
         android:layout_alignStart="@+id/mActFromSpn"
         android:layout_marginTop="55dp"
-        android:id="@+id/mAcctFromTxt" />
+        android:id="@+id/fAcctFromTxt" />
 
     <TextView
         android:text="Welcome"
@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/mActFromSpn"
         android:layout_marginTop="16dp"
-        android:layout_below="@+id/mAcctFromTxt"
+        android:layout_below="@+id/fAcctFromTxt"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 

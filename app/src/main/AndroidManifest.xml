@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".BankingActivity" />
-        <activity android:name=".BalanceTransferActivity"></activity>
+        <activity android:name=".BalanceTransferActivity" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

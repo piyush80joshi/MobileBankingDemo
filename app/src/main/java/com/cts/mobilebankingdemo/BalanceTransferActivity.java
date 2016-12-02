@@ -65,7 +65,7 @@ public class BalanceTransferActivity extends AppCompatActivity {
             }
         });
         //-------------------------
-        tFromAcct = (TextView) findViewById(R.id.mAcctFromTxt);
+        tFromAcct = (TextView) findViewById(R.id.fAcctFromTxt);
         tToAcct = (TextView) findViewById(R.id.mAcctToTxt);
         ArrayList<String> fromAccountList = getFromAccountList();
         ArrayAdapter fromAcctAdapter = new ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, fromAccountList);
